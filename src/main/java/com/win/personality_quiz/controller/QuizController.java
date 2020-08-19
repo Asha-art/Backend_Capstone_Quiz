@@ -16,7 +16,7 @@ import org.springframework.web.bind.annotation.RestController;
 
 @RestController
 @RequestMapping("/quiz")
-@CrossOrigin(origins = "http://localhost:3000")
+@CrossOrigin(origins = "https://capstone-personalityquiz-front.herokuapp.com")
 public class QuizController {
 
     @Autowired
@@ -27,17 +27,4 @@ public class QuizController {
         return quizRepo.findAll();
     }
 
-    // @GetMapping("questions")
-    // public ResponseEntity<Object> getQuestions() {
-    // return new ResponseEntity<>(quizService.getQuestions(), HttpStatus.OK);
-    // }
-
-    // save answers into database
-    // @CrossOrigin(origins = "http://localhost:3000")
-    // @PostMapping("answers")
-    // public void addAnswer(@RequestBody Answer answers) {
-    // System.out.println(answers);
-    // answerRepo.save(answers);
-    // // return "QuizComponent";
-    // }
 }

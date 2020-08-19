@@ -1,6 +1,5 @@
 package com.win.personality_quiz.controller;
 
-
 import java.util.List;
 
 import com.win.personality_quiz.model.Answer;
@@ -21,7 +20,7 @@ import org.springframework.web.bind.annotation.RestController;
 
 @RestController
 @RequestMapping("/quiz")
-@CrossOrigin(origins = "http://localhost:3000")
+@CrossOrigin(origins = "https://capstone-personalityquiz-front.herokuapp.com")
 public class AnswerController {
 
     @Autowired
