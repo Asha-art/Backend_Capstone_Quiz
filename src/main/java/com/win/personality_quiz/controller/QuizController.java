@@ -23,8 +23,8 @@ public class QuizController {
     private QuizRepo quizRepo;
 
     @GetMapping("/questions")
-    public Collection<Quiz> getQuestions() {
-        return quizRepo.findAll();
+    public void getQuestions() {
+        quizRepo.findAll();
     }
 
 }
